@@ -3,6 +3,7 @@ import "./App.css";
 import TextField from "./Components/TextField";
 import User from "./Components/User";
 import { useRef, useState } from "react";
+import Dev from "./Components/Dev";
 
 function App() {
   const maxUsers = 100; // Set a maximum number of users for better UI handling
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="page-wrapper">
       <div className="hero-card">
+        <Dev />
         <h1 className="text-5xl mb-6">Get random users</h1>
         <div className="flex flex-col items-center">
           <TextField
